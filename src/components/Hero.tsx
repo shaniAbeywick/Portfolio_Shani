@@ -1,3 +1,4 @@
+'use client';
 import { Download,Send } from "lucide-react";
 import Link from "next/link";
 import { RiArrowDownSLine } from "react-icons/ri";
@@ -8,6 +9,15 @@ import Image from "next/image";
 
 
 const Hero = () => {
+    const scrollToSection = () => {
+        const element = document.getElementById("about");
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      };
+
+
+
   return (
     <section className="py-12 xl:py-24 xl:pt-28 ">
         <div className="container mx-auto">
@@ -26,7 +36,7 @@ const Hero = () => {
                             Contact me <Send size={18}/> 
                         </Button>
                         </Link>
-                        <a href="/Resume-shani.pdf" download><Button variant="secondary" className="gap-x-2 hover:bg-primary hover:text-white">Download CV<Download size={18}/></Button></a>
+                        <a href="/Resume-Shani Abeywickrama.pdf" download><Button variant="secondary" className="gap-x-2 hover:bg-primary hover:text-white">Download CV<Download size={18}/></Button></a>
                         
                     </div>
                     {/* socials */}
@@ -37,7 +47,7 @@ const Hero = () => {
                     <DevImg containerStyles='bg-hero_shape relative bg-no-repeat bg-cover w-[500px] h-[620px]' imgSrc='/images/edited_profile.jpg'/>
                 </div>
             </div>
-            <div className="hidden md:flex absolute left-2/4 bottom-44 xl:bottom-2 animate-bounce">
+            <div className="hidden md:flex absolute left-2/4 bottom-44 xl:bottom-2 animate-bounce" onClick={scrollToSection}>
                 <RiArrowDownSLine className='text-3xl text-primary'/>
             </div>
 

@@ -7,10 +7,10 @@ const Footer = () => {
       <div className='container mx-auto'>
         <div className='flex flex-col items-center justify-between'>
           {/* socials */}
-          <Socials containerStyles='flex gap-x-6 mx-auto xl:mx-0 mb-4' iconsStyles='text-primary dark:text-white/70 text-[20px] hover:text-white dark:hover:text-primary transition-all'/>
+          <Socials containerStyles='flex gap-x-6 mx-auto xl:mx-0 mb-4' iconsStyles='text-primary dark:text-white/70 text-[20px] hover:text-red-200 dark:hover:text-primary transition-all'/>
           {/* copyright */}
           <div className='text-muted-foreground'>
-            Copyright &copy; Shani Abeywickrama.All right reserved.
+            &copy; 2024 Shani Abeywickrama.All right reserved.
           </div>
 
         </div>

@@ -1,8 +1,11 @@
 import React from "react";
 import { MailIcon, HomeIcon, PhoneCall } from "lucide-react";
 import Form from "@/components/Form";
+import Image from "next/image";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
+  
   return (
     <section>
       <div className="container mx-auto">
@@ -13,11 +16,13 @@ const Contact = () => {
             </div>
             <h1 className="h1 max-w-md mb-8">Let&apos;s Work Together</h1>
             <p className="subtitle max-w-[400px]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-              error quae aperiam iusto facilis incidunt numquam{" "}
+            I’m excited to collaborate and explore new opportunities. If you have a project in mind, a question, or just want to say hello, feel free to reach out.{" "}
             </p>
           </div>
-          <div>image</div>
+          <div>
+            <Image src="/images/contact.jpg" alt="contactImage" className="hidden lg:block" width={500} height={500}/>
+
+          </div>
         </div>
         {/* form */}
         <div className="grid xl:grid-cols-2 mb-24 xl:mb-32">

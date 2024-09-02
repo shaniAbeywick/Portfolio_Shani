@@ -168,7 +168,7 @@ const About = () => {
   };
 
   return (
-    <section className="xl:h-[920px] pb-12 xl:py-24">
+    <section id="about" className="xl:h-[920px] pb-12 xl:py-24">
       <div className="container mx-auto">
         <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">
           About me
@@ -178,7 +178,7 @@ const About = () => {
           <div className="hidden xl:flex flex-1 relative">
             <DevImg
               containerStyles="w-[400px] h-[400px] bg-no-repeat relative"
-              imgSrc="/images/profile.jpg"
+              imgSrc="/images/about.png"
             />
           </div>
           {/* tabs */}
